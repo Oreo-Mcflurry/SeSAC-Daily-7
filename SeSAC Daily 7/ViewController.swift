@@ -78,7 +78,7 @@ class ViewController: UIViewController {
 		let weight = Float(weightTextField.text!) ?? 0
 		let tall = (Float(tallTextField.text!) ?? 0) / 100
 		let bmi = weight / (tall * tall)
-
+		
 		let message: String
 		switch bmi {
 		case ..<18.5: message = "저체중"

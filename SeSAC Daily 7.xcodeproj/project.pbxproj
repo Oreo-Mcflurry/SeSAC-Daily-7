@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BEBF8332B46716B00AE88AB /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBF8322B46716B00AE88AB /* IQKeyboardManagerSwift */; };
+		0BEBF8362B4671A000AE88AB /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBF8352B4671A000AE88AB /* FSCalendar */; };
+		0BEBF8392B46721100AE88AB /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBF8382B46721100AE88AB /* TextFieldEffects */; };
+		0BEBF83C2B46735500AE88AB /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBF83B2B46735500AE88AB /* Toast */; };
+		0BEBF83F2B46739D00AE88AB /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBF83E2B46739D00AE88AB /* SideMenu */; };
+		0BEBF8422B46782900AE88AB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBF8412B46782900AE88AB /* Kingfisher */; };
+		0BEBF85C2B46BFC700AE88AB /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBF85B2B46BFC700AE88AB /* EmotionViewController.swift */; };
 		0BFD14232B4591480013067B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD14222B4591480013067B /* AppDelegate.swift */; };
 		0BFD14252B4591480013067B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD14242B4591480013067B /* SceneDelegate.swift */; };
 		0BFD14272B4591480013067B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD14262B4591480013067B /* ViewController.swift */; };
@@ -16,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BEBF85B2B46BFC700AE88AB /* EmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		0BFD141F2B4591480013067B /* SeSAC Daily 7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeSAC Daily 7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFD14222B4591480013067B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BFD14242B4591480013067B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +39,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEBF8422B46782900AE88AB /* Kingfisher in Frameworks */,
+				0BEBF83C2B46735500AE88AB /* Toast in Frameworks */,
+				0BEBF8392B46721100AE88AB /* TextFieldEffects in Frameworks */,
+				0BEBF8332B46716B00AE88AB /* IQKeyboardManagerSwift in Frameworks */,
+				0BEBF83F2B46739D00AE88AB /* SideMenu in Frameworks */,
+				0BEBF8362B4671A000AE88AB /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,7 @@
 		0BFD14212B4591480013067B /* SeSAC Daily 7 */ = {
 			isa = PBXGroup;
 			children = (
+				0BEBF85B2B46BFC700AE88AB /* EmotionViewController.swift */,
 				0BFD14222B4591480013067B /* AppDelegate.swift */,
 				0BFD14242B4591480013067B /* SceneDelegate.swift */,
 				0BFD14262B4591480013067B /* ViewController.swift */,
@@ -83,6 +98,14 @@
 			dependencies = (
 			);
 			name = "SeSAC Daily 7";
+			packageProductDependencies = (
+				0BEBF8322B46716B00AE88AB /* IQKeyboardManagerSwift */,
+				0BEBF8352B4671A000AE88AB /* FSCalendar */,
+				0BEBF8382B46721100AE88AB /* TextFieldEffects */,
+				0BEBF83B2B46735500AE88AB /* Toast */,
+				0BEBF83E2B46739D00AE88AB /* SideMenu */,
+				0BEBF8412B46782900AE88AB /* Kingfisher */,
+			);
 			productName = "SeSAC Daily 7";
 			productReference = 0BFD141F2B4591480013067B /* SeSAC Daily 7.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,14 @@
 				Base,
 			);
 			mainGroup = 0BFD14162B4591480013067B;
+			packageReferences = (
+				0BEBF8312B46716B00AE88AB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				0BEBF8342B4671A000AE88AB /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				0BEBF8372B46721100AE88AB /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				0BEBF83A2B46735500AE88AB /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				0BEBF83D2B46739D00AE88AB /* XCRemoteSwiftPackageReference "SideMenu" */,
+				0BEBF8402B46782900AE88AB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 0BFD14202B4591480013067B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEBF85C2B46BFC700AE88AB /* EmotionViewController.swift in Sources */,
 				0BFD14272B4591480013067B /* ViewController.swift in Sources */,
 				0BFD14232B4591480013067B /* AppDelegate.swift in Sources */,
 				0BFD14252B4591480013067B /* SceneDelegate.swift in Sources */,
@@ -363,6 +395,90 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BEBF8312B46716B00AE88AB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.16;
+			};
+		};
+		0BEBF8342B4671A000AE88AB /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+		0BEBF8372B46721100AE88AB /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+		0BEBF83A2B46735500AE88AB /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		0BEBF83D2B46739D00AE88AB /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		0BEBF8402B46782900AE88AB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BEBF8322B46716B00AE88AB /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEBF8312B46716B00AE88AB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		0BEBF8352B4671A000AE88AB /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEBF8342B4671A000AE88AB /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		0BEBF8382B46721100AE88AB /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEBF8372B46721100AE88AB /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		0BEBF83B2B46735500AE88AB /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEBF83A2B46735500AE88AB /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		0BEBF83E2B46739D00AE88AB /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEBF83D2B46739D00AE88AB /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+		0BEBF8412B46782900AE88AB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BEBF8402B46782900AE88AB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0BFD14172B4591480013067B /* Project object */;
 }
