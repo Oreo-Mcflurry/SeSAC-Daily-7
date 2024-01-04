@@ -45,7 +45,6 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func changeValueTextField(_ sender: UITextField) {
-
 		if sender.text!.count > 3 {
 			sender.text?.removeLast()
 		}
