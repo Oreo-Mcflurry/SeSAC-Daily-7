@@ -14,6 +14,7 @@
 		0BEBF83F2B46739D00AE88AB /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBF83E2B46739D00AE88AB /* SideMenu */; };
 		0BEBF8422B46782900AE88AB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0BEBF8412B46782900AE88AB /* Kingfisher */; };
 		0BEBF85C2B46BFC700AE88AB /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBF85B2B46BFC700AE88AB /* EmotionViewController.swift */; };
+		0BEBF85E2B46CEB400AE88AB /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBF85D2B46CEB400AE88AB /* PracticeViewController.swift */; };
 		0BFD14232B4591480013067B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD14222B4591480013067B /* AppDelegate.swift */; };
 		0BFD14252B4591480013067B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD14242B4591480013067B /* SceneDelegate.swift */; };
 		0BFD14272B4591480013067B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD14262B4591480013067B /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		0BEBF85B2B46BFC700AE88AB /* EmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		0BEBF85D2B46CEB400AE88AB /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
 		0BFD141F2B4591480013067B /* SeSAC Daily 7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeSAC Daily 7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFD14222B4591480013067B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BFD14242B4591480013067B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				0BFD14242B4591480013067B /* SceneDelegate.swift */,
 				0BFD14262B4591480013067B /* ViewController.swift */,
 				0BFD14282B4591480013067B /* Main.storyboard */,
+				0BEBF85D2B46CEB400AE88AB /* PracticeViewController.swift */,
 				0BFD142B2B4591490013067B /* Assets.xcassets */,
 				0BFD142D2B4591490013067B /* LaunchScreen.storyboard */,
 				0BFD14302B4591490013067B /* Info.plist */,
@@ -172,6 +175,7 @@
 				0BEBF85C2B46BFC700AE88AB /* EmotionViewController.swift in Sources */,
 				0BFD14272B4591480013067B /* ViewController.swift in Sources */,
 				0BFD14232B4591480013067B /* AppDelegate.swift in Sources */,
+				0BEBF85E2B46CEB400AE88AB /* PracticeViewController.swift in Sources */,
 				0BFD14252B4591480013067B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

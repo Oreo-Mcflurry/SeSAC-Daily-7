@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T6c-Kk-QjO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -96,19 +96,35 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="결과 확인"/>
                                 <connections>
+                                    <action selector="endEditing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rB8-rx-8xB"/>
                                     <action selector="getResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i0W-GF-GZg"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임 여기에 입력해줘요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mCe-og-BHv">
+                                <rect key="frame" x="16" y="609.66666666666663" width="361" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="5xt-BE-gZd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changeValueTextField:" destination="BYZ-38-t0r" eventType="editingChanged" id="o8a-hw-Fjq"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="SK3-jb-yVC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0i3-mF-VrW"/>
                             <constraint firstItem="F7d-vW-u7P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0yD-NT-wSG"/>
                             <constraint firstItem="PtC-WA-5kP" firstAttribute="leading" relation="lessThanOrEqual" secondItem="F7d-vW-u7P" secondAttribute="trailing" constant="40" id="3LE-wC-ZZC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mkN-zR-Ic8" secondAttribute="trailing" constant="16" id="3aa-qo-BgC"/>
                             <constraint firstItem="Asj-OA-w81" firstAttribute="top" secondItem="PHY-tf-SA9" secondAttribute="bottom" constant="30" id="4Oy-xh-fRs"/>
+                            <constraint firstItem="mCe-og-BHv" firstAttribute="top" secondItem="8uu-a6-DVq" secondAttribute="bottom" constant="5" id="4hh-PD-3Kp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mCe-og-BHv" secondAttribute="trailing" constant="16" id="7y1-Wp-5cV"/>
                             <constraint firstItem="PHY-tf-SA9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Anr-fe-XIH"/>
+                            <constraint firstItem="mCe-og-BHv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BRQ-B9-MMm"/>
                             <constraint firstItem="SK3-jb-yVC" firstAttribute="top" secondItem="F7d-vW-u7P" secondAttribute="bottom" constant="8" id="LLF-Jw-Ygx"/>
                             <constraint firstItem="mkN-zR-Ic8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="QBr-YV-vnv"/>
                             <constraint firstItem="PtC-WA-5kP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SK3-jb-yVC" secondAttribute="trailing" constant="8" symbolic="YES" id="VF1-rR-l5P"/>
@@ -131,8 +147,12 @@
                             <constraint firstItem="8uu-a6-DVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="u9Z-bS-xwd"/>
                             <constraint firstItem="PHY-tf-SA9" firstAttribute="top" secondItem="PtC-WA-5kP" secondAttribute="bottom" id="waZ-lD-n6k"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Uj7-Z2-ePc" appends="YES" id="a2N-7O-Aru"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="nickNameTextField" destination="mCe-og-BHv" id="eCo-xd-x6n"/>
                         <outlet property="resultButton" destination="8uu-a6-DVq" id="Pbq-cT-fhP"/>
                         <outlet property="tallTextField" destination="PHY-tf-SA9" id="f4I-7h-Hx3"/>
                         <outlet property="topLabel" destination="SK3-jb-yVC" id="HIz-T0-J3J"/>
@@ -140,8 +160,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Uj7-Z2-ePc">
+                    <connections>
+                        <action selector="endEditing:" destination="BYZ-38-t0r" id="NPZ-Tz-tFz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="621" y="103"/>
+            <point key="canvasLocation" x="620.61068702290072" y="102.8169014084507"/>
         </scene>
         <!--감정 다이어리-->
         <scene sceneID="EJ8-t4-Dv1">
@@ -522,6 +547,45 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1633" y="103"/>
+        </scene>
+        <!--Practice View Controller-->
+        <scene sceneID="jdX-YX-OCJ">
+            <objects>
+                <viewController id="guR-j2-8V9" customClass="PracticeViewController" customModule="SeSAC_Daily_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Olb-QN-SrP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuK-N8-NlG">
+                                <rect key="frame" x="75" y="364" width="260" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZjP-Fb-pLT">
+                                <rect key="frame" x="142" y="463" width="127" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다른버튼이지롱"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="alg-DK-DN2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="oYN-Es-Dfp" appends="YES" id="GAT-u0-I2F"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="anotherButton" destination="ZjP-Fb-pLT" id="I42-WA-DWM"/>
+                        <outlet property="pinchGesture" destination="oYN-Es-Dfp" id="nvG-MJ-MM1"/>
+                        <outlet property="practiceButton" destination="KuK-N8-NlG" id="D7k-0L-RKM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKN-oG-aH9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="oYN-Es-Dfp"/>
+            </objects>
+            <point key="canvasLocation" x="2454" y="103"/>
         </scene>
     </scenes>
     <resources>
